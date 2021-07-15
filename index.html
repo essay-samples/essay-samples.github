@@ -4,94 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Home</title>
-    
-    <style>
-    nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #111;
-}
-
-.center {
-  margin: auto;
-  width: 30%;
-  border: 3px solid #111;
-  padding: 10px;
-  background: white;
-  background-clip: border-box; 
-}
-.cont {
-  background-image: url("sb.jpg");
-}
-    </style>
+    <title>NUMBER SERIES</title>
+    <link rel = "stylesheet" type = "text/css" href = "Style.css" />
 </head>
 <body>
-        <nav class="w3-bar w3-black">
-                <a href="index.html" >Home</a>
-                <a href="essay.html" >Essays</a>
-                <a href="#" >Tips</a>
-                <a href="#" >Additional Info.</a>
-              </nav>
-
-              <div class="jumbotron text-center">
-                <h1>Free Sample Essays</h1>
-                <p>Essays on a wide-range of topics for anyone anywhere!</p> 
-              </div>
-
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm-4">
-                      <h3>Essay types</h3>
-                      <p>Explore different types of writing: Narratives, Research Reports, Arguments, and much more!!</p>
-                  </div>
-                  <div class="col-sm-4">
-                      <h3>Essay Topics</h3>
-                      <p>Easy and efficient way to get inspired to write your own essays and stories with essay topics ranging form fictional stories to important global issues.</p>
-                  </div>
-                  <div class="col-sm-4">
-                    <h3>Weekly Tips</h3>
-                    <p>Get free weekly writing tips from the "Tips" section to take your writng game to the next level!!</p>
-                  </div>
-                </div>
-              </div>
-<hr></hr>
-<div class="cont">
-              <div class="center">
-                <h3>"You can make anything by writing"</h3>
-                <p>-C.S. Lewis</p>
-              </div>
-</div>
-              <hr></hr>
-
-              <div class="text-center">
-                <h3>How you can contribute:</h3>
-                <p>Would you like to contribute to this website? How aboout just posting your essays and stories here! Email your essays to <b>Essaysamples@gmail.com</b> we will proofread your essay and post it here if it lives up to standards, and don't worry you can send as many essays as you like.</p>
-                <p>If you want we can also give you a shoutout to make sure you get the credit you deserve for your work!!!</p>
-                <h3>We love your feedback:</h3>
-                <p>You can email us about any issues with the website or any mistakes in the essays at <b>Essaysamples@gmail.com</b> feel free to send your suggestions as well</p>
-              </div>
-              
-      
+<h3>FIBONACCI SERIES</h3>
+<p><?php
+$num1 = 0;
+$num2 = 1;
+echo "$num1, ";
+echo "$num2, ";
+for($count = 0; $count <= 100; $count++){
+$num3 = $num1 + $num2;
+$num1 = $num2;
+$num2 = $num3;
+echo "$num3, ";
+}
+?> </p>
+<hr>
+<p><a href= "num.php">CLICK HERE TO SEE PRIME NUMBERS</a></p>
+<p><a href= "fib_info.php">CLICK HERE TO SEE INFORMATION ABOUT THE 
+      FIBONACCI SERIES</a></p>
+<h2>-Naima H.</h2>
 </body>
-<footer class="text-center">&copy; Copyright 2020 Essay</footer>
-
+<footer>&copy; Copyright <?php echo date("Y"); ?> Naima H.</footer>
 </html>
+
