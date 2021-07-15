@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NUMBER SERIES</title>
+    <title>PRIME NUMBERS</title>
     <link rel = "stylesheet" type = "text/css" href = "Style.css" />
 </head>
 <body>
-<h3>FIBONACCI SERIES</h3>
-<p><?php
-$num1 = 0;
-$num2 = 1;
-echo "$num1, ";
-echo "$num2, ";
-for($count = 0; $count <= 100; $count++){
-$num3 = $num1 + $num2;
-$num1 = $num2;
-$num2 = $num3;
-echo "$num3, ";
-}
-?> </p>
+<h3>PRIME NUMBERS</h3>
+<p><?php 
+    for($i = 1; $i <= 2000; $i++){  
+        $count1 = 0; 
+        for($x = 1; $x <= $i; $x++){ 
+
+
+              if($i % $x == 0){ 
+                    $count1++;
+              }
+        }
+      if($count1 == 2){
+            echo "$i, ";
+      }
+  }
+?></p>
 <hr>
-<p><a href= "num.php">CLICK HERE TO SEE PRIME NUMBERS</a></p>
-<p><a href= "fib_info.php">CLICK HERE TO SEE INFORMATION ABOUT THE 
-      FIBONACCI SERIES</a></p>
+<p><a href= "number_series.php">CLICK HERE TO GO BACK TO FIBONACCI SERIES</a></p>
+<p><a href= "info.php">CLICK HERE TO SEE INFORMATION ABOUT PRIME NUMBERS</a></p>
+
 <h2>-Naima H.</h2>
 </body>
 <footer>&copy; Copyright <?php echo date("Y"); ?> Naima H.</footer>
 </html>
-
